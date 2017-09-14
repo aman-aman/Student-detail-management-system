@@ -236,12 +236,6 @@ void entry_menu()
 			cout<<"\a"; entry_menu();
 	}
 }
-void creator()
-{	
-	cout<<"\n\tMADE BY...\n";
-	cout<<"\n\tNAME : AMAN KUMR JHA"<<"\n\t"<<"ROLL NUMBER : 13"<<endl;
-	cout<<"\n\tNAME : AMIT KUMAR"<<"\n\t"<<"ROLL NUMBER : 15"<<endl;	
-}	
 
 int main()
 {
@@ -251,7 +245,8 @@ int main()
 	cout<<"\n\n\t\tREPORT CARD";
 	do
 	{
-
+		cout<<"\n\tMADE BY...\n";
+		cout<<"\n\tNAME : AMAN KUMR JHA"<<"\n\t"<<"ROLL NUMBER : 13"<<endl;	
 		cout<<"\n\n\n\tMAIN MENU";
 		cout<<"\n\n\t01. RESULT MENU";
 		cout<<"\n\n\t02. ENTRY/EDIT MENU";
@@ -265,13 +260,11 @@ int main()
 			case '2': entry_menu();
 				break;
 			case '3':
-				creator();
 				break;
 			default :
 			    cout<<"\n\n\tError...!!!...Wrong Choice Entered...!!!";
 		}
     	}while(ch!='3');
-	return 0;
 }
 
 
